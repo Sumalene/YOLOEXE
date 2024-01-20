@@ -28,6 +28,13 @@ import os
 
 """
 yoloPre:该文件是 yolo 的预测文件，用于实现 yolo 的预测功能。
+主要方法:
+    1. run: 用于实现 yolo 的预测功能。
+    2. camera_run: 用于实现 yolo 的预测功能，但是该方法是用于摄像头的预测。
+    3. get_annotator: 用于获取 Annotator 对象，该对象用于绘制检测结果。
+    4. preprocess: 用于对图像进行预处理。
+    5. postprocess: 用于对模型的预测结果进行后处理。
+    6. write_results: 用于将模型的预测结果写入到文件中。
 """
 
 class YoloPredictor(BasePredictor, QObject):
