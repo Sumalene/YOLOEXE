@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="2.0">
+ <class>MainWindow</class>
+ <resources>
+  <include location="YYO.qrc"/>
+  <include location="Z:/QTproject/YYO.qrc"/>
+ </resources>
+ <connections/>
+</ui>
