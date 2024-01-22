@@ -91,7 +91,10 @@ class YoloPredictor(BasePredictor, QObject):
 
     @smart_inference_mode()
     def camera_run(self):
-
+        """
+        流程: 1. 设置资源模式; 2. 检查保存路径/标签; 3. 模型预热; 4. 开始检测。
+        :return:
+        """
         global all_count
         try:
             if self.args.verbose:
