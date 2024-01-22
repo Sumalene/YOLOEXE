@@ -29,7 +29,7 @@ class Ui_MainWindow(object):
 
         self.Main_QF = QFrame(self.Main_QW)
         self.Main_QF.setObjectName(u"Main_QF")
-        self.Main_QF.setStyleSheet(u"QFrame#Main_QF{\n"
+        self.Main_QF.setStyleSheet(u"QFrame#Main_QF{\n" 
                                    "background-color: qlineargradient(x0:0, y0:1, x1:1, y1:1,stop:0.4  rgba(252, 228, 232, 0.87), stop:1 rgba(187, 248, 248, 0.88));\n"
                                    "border:0px solid red;\n"
                                    "border-radius:7px\n"
@@ -73,7 +73,7 @@ class Ui_MainWindow(object):
         self.logo.setMaximumSize(QSize(50, 50))
         self.logo.setStyleSheet(u"image: url(:/all/img/logo.png);\n"
                                 "border:2px solid rgb(255, 255, 255);\n"
-                                "border-radius:10px")
+                                "border-radius:7px")
         self.Author = QLabel(self.TopLogoInfo)
         self.Author.setObjectName(u"Author")
         self.Author.setGeometry(QRect(90, 30, 60, 30))
@@ -81,7 +81,7 @@ class Ui_MainWindow(object):
         self.Author.setSizePolicy(sizePolicy)
         self.Author.setMinimumSize(QSize(60, 30))
         self.Author.setMaximumSize(QSize(60, 30))
-        self.Author.setStyleSheet(u"font: italic 11pt \"Segoe UI\";\n"
+        self.Author.setStyleSheet(u"font: normal 11pt \"Segoe UI\";\n"
                                   "color: rgb(25, 25, 25);")
         self.Author.setAlignment(Qt.AlignCenter)
         self.Title = QLabel(self.TopLogoInfo)
@@ -258,7 +258,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_3.setContentsMargins(18, 0, -1, 0)
         self.VersionLabel = QLabel(self.VersionInfo)
         self.VersionLabel.setObjectName(u"VersionLabel")
-        self.VersionLabel.setStyleSheet(u"font: 900 italic 10pt \"Segoe UI\";\n"
+        self.VersionLabel.setStyleSheet(u"font: 900 normal 10pt \"Segoe UI\";\n"
                                         "color: rgba(255, 255, 255, 199);")
         self.VersionLabel.setAlignment(Qt.AlignCenter)
 
@@ -298,7 +298,7 @@ class Ui_MainWindow(object):
         self.explain_title.setObjectName(u"explain_title")
         self.explain_title.setMinimumSize(QSize(0, 30))
         self.explain_title.setMaximumSize(QSize(16777215, 30))
-        self.explain_title.setStyleSheet(u"font: 700 italic 11pt \"Segoe UI\";")
+        self.explain_title.setStyleSheet(u"font: 700 normal 11pt \"Segoe UI\";")
         self.explain_title.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout.addWidget(self.explain_title)
@@ -425,7 +425,7 @@ class Ui_MainWindow(object):
         self.QF_Group.setStyleSheet(u"QFrame#QF_Group{\n"
                                     "background-color: rgb(238, 242, 255);\n"  
                                     "border:2px solid rgb(255, 255, 255);\n"
-                                    "border-radius:15px;\n"
+                                    "border-radius:7px;\n"
                                     "}")
         self.QF_Group.setFrameShape(QFrame.StyledPanel)
         self.QF_Group.setFrameShadow(QFrame.Raised)
@@ -466,7 +466,7 @@ class Ui_MainWindow(object):
         font2.setFamilies([u"Segoe UI"])
         font2.setPointSize(16)
         font2.setBold(True)
-        font2.setItalic(True)
+        font2.setItalic(False)
         self.label_5.setFont(font2)
         self.label_5.setStyleSheet(u"color: rgba(25, 25, 25,210);\n"  
                                    "padding-left:12px;\n"
@@ -780,21 +780,13 @@ class Ui_MainWindow(object):
         self.splitter.setOrientation(Qt.Horizontal)
         self.splitter.setHandleWidth(2)
 
-        # self.pre_video = QLabel(self.splitter)
-        # self.pre_video.setObjectName(u"pre_video")
-        # self.pre_video.setMinimumSize(QSize(200, 100))
-        # self.pre_video.setStyleSheet(u"background-color: rgb(238, 242, 255);\n"
-        #                              "border:2px solid rgb(255, 255, 255);\n"
-        #                              "border-radius:15px")
-        # self.pre_video.setAlignment(Qt.AlignCenter)
-        # self.splitter.addWidget(self.pre_video)
 
         self.res_video = QLabel(self.splitter)
         self.res_video.setObjectName(u"res_video")
         self.res_video.setMinimumSize(QSize(200, 100))
         self.res_video.setStyleSheet(u"background-color: rgb(238, 242, 255);\n"
                                      "border:2px solid rgb(255, 255, 255);\n"
-                                     "border-radius:15px")
+                                     "border-radius:7px")
         self.res_video.setAlignment(Qt.AlignCenter)
         self.splitter.addWidget(self.res_video)
 
@@ -886,8 +878,8 @@ class Ui_MainWindow(object):
         self.prm_page.setMinimumSize(QSize(0, 0))
         self.prm_page.setMaximumSize(QSize(0, 16777215))
         self.prm_page.setStyleSheet(u"QFrame#prm_page{\n"
-
-                                    "background-color: qlineargradient(x0:0, y0:1, x1:1, y1:1,stop:0.1  rgba(252, 228, 232, 1), stop:1 rgba(187, 248, 248, 1));\n"
+                                    "background-color: qlineargradient(x0:0, y0:1, x1:1, y1:1,stop:0.1  rgba(252, "
+                                    "228, 232, 1), stop:1 rgba(187, 248, 248, 1));\n"
                                     "border-top-left-radius:7px;\n"
                                     "border-top-right-radius:0px;\n"
                                     "border-bottom-right-radius:0px;\n"
@@ -904,7 +896,7 @@ class Ui_MainWindow(object):
         self.label.setStyleSheet(u"padding-left: 0px;\n"
                                  "padding-bottom: 2px;\n"
                                  "color: rgba(255, 255, 255, 240);\n"
-                                 "font: 700 italic 16pt \"Segoe UI\";")
+                                 "font: 700 normal 16pt \"Segoe UI\";")
         self.label.setAlignment(Qt.AlignCenter)
 
         self.verticalLayout_22.addWidget(self.label)
